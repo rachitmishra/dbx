@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="databindingItemViewModel"
+            type="in.ceeq.dbe.models.DatabindingItemViewModel" />
+    </data>
+
+    <android.support.v7.widget.CardView style="@style/AppTheme.CardView">
+
+        <LinearLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/card_padding_horizontal">
+
+            <TextView
+                style="@style/AppTheme.ListView.Text.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:minHeight="0dp"
+                android:paddingTop="@dimen/button_internal_padding_dense"
+                bind:text="@{databindingItemViewModel.title}"
+                tools:text="Jim" />
+
+            <View
+                style="@style/AppTheme.Divider.Horizontal"
+                android:layout_marginBottom="@dimen/button_internal_padding_dense"
+                android:layout_marginTop="@dimen/button_internal_padding_dense" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AppTheme.Text.Display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:minHeight="0dp"
+                    bind:text="@{databindingItemViewModel.value}"
+                    bind:textColor="@{databindingItemViewModel.color}"
+                    tools:text="Lake" />
+
+                <TextView
+                    style="@style/AppTheme.Text.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:minHeight="0dp"
+                    bind:text="@{databindingItemViewModel.rating}"
+                    tools:text="Junior" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/AppTheme.ListView.Text.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:minHeight="0dp"
+                android:paddingBottom="@dimen/button_internal_padding_dense"
+                android:paddingTop="@dimen/button_internal_padding_dense"
+                bind:text="@{databindingItemViewModel.suggestion}"
+                tools:text="The Trollhunters" />
+
+            <View
+                style="@style/AppTheme.Divider.Horizontal"
+                android:layout_marginBottom="@dimen/button_internal_padding_dense"
+                android:layout_marginTop="@dimen/button_internal_padding_dense"
+                bind:visible="@{databindingItemViewModel.button}"/>
+
+            <Button
+                style="@style/AppTheme.Button.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:gravity="left"
+                android:minHeight="0dp"
+                android:onClick="@{databindingItemViewModel.onButtonClick}"
+                android:paddingLeft="0dp"
+                android:paddingRight="@dimen/button_internal_padding_dense"
+                android:textAllCaps="true"
+                bind:visible="@{databindingItemViewModel.button}"
+                bind:text="@{databindingItemViewModel.button}"
+                tools:text="Netflix" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</layout>

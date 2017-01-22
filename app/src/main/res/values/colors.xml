@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Updating palette has to be reflected across application -->
+    <!-- The #XX before color reflects percentage alpha from base color value -->
+    <!-- App palette -->
+
+    <!-- Don't use palette colors directly in xml, instead use material references -->
+
+    <color name="white">@android:color/white</color>
+    <color name="blue_grey_900">#263238</color>
+    <color name="blue_grey_800">#37474F</color>
+    <color name="blue_grey_400">#78909C</color>
+    <color name="blue_grey_50">#ECEFF1</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="transparent_pressed">#4B767676</color>
+
+    <color name="cyan_800">#00838F</color>
+    <color name="cyan_900">#006064</color>
+    <color name="cyan_300">#4DD0E1</color>
+    <color name="red_600">#E53935</color>
+    <color name="green_600">#43A047</color>
+    <color name="amber_600">#FFB300</color>
+
+    <!-- Material default colors -->
+    <color name="colorPrimary">@color/white</color>
+    <color name="colorPrimaryLight">@color/grey_100</color>
+    <color name="colorSecondary">@color/blue_grey_900</color>
+    <color name="colorSecondaryLight">@color/blue_grey_800</color>
+    <color name="colorAccent">@color/cyan_800</color>
+    <color name="colorAccentDark">@color/cyan_900</color>
+    <color name="colorAccentLight">@color/cyan_300</color>
+    <color name="colorNegative">@color/red_600</color>
+    <color name="colorPositive">@color/green_600</color>
+    <color name="colorWarning">@color/amber_600</color>
+
+    <!-- Shadows -->
+    <color name="colorShadowBackground">@color/blue_grey_400</color>
+    <color name="colorWindowBackground">@color/grey_100</color>
+    <color name="colorDividerLight">@color/grey_100</color>
+
+    <!-- Text colors -->
+    <color name="colorTextPrimary">@color/blue_grey_900</color>
+    <color name="colorTextSecondary">@color/blue_grey_800</color>
+    <!-- Can be used as tertiary text color -->
+    <color name="colorTextDisabled">@color/blue_grey_400</color>
+    <color name="colorTextWarning">@color/blue_grey_900</color>
+    <color name="colorTextLinkNormal">@color/colorAccent</color>
+    <color name="colorTextLinkHighlight">@color/colorAccentDark</color>
+    <color name="colorTextLinkDisabled">@color/colorAccentLight</color>
+    <color name="colorTextPositive">@color/colorPrimary</color>
+    <color name="colorTextNegative">@color/colorNegative</color>
+
+    <!-- Button colors -->
+    <color name="colorButtonNormal">@color/colorAccent</color>
+    <color name="colorButtonPressed">@color/colorAccentDark</color>
+    <color name="colorButtonDisabled">@color/colorAccentLight</color>
+    <color name="colorButtonTransparentHighlight">@color/blue_grey_400</color>
+    <color name="colorButtonAccentHighlight">@color/colorAccent</color>
+    <color name="colorButtonPrimaryHighlight">@color/blue_grey_400</color>
+
+    <!-- EditText colors -->
+    <color name="colorControlNormal">@color/colorSecondary</color>
+    <color name="colorControlDisabled">@color/colorSecondaryLight</color>
+    <color name="colorControlHighlight">@color/colorAccent</color>
+</resources>
